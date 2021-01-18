@@ -22,7 +22,9 @@ public class TransitionController : MonoBehaviour
 
     public void Load_Next_Scene()
     {
-        StartCoroutine(Load_Scene(SceneManager.GetActiveScene().buildIndex + 1));
+        StartCoroutine(
+            Load_Scene(SceneManager.GetActiveScene().buildIndex + 1)
+        );
     }
 
     IEnumerator Load_Scene(int level_Index)

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4440726671336036778}
   - component: {fileID: 4440726671336036757}
   m_Layer: 0
-  m_Name: Transition Controller 1
+  m_Name: Transition Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb2f4f2e944fda41a23212b0b803267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: {fileID: 0}
+  transition: {fileID: 4440726671749547518}
   trans_Time: 1
 --- !u!1 &4440726671808442132
 GameObject:
