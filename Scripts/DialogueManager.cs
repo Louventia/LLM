@@ -8,6 +8,9 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
 
     public GameObject dialogueUI;
+    public GameObject checkboxUI;
+
+    public GameObject continueBtn;
 
     private Queue<string> sentences;
 
@@ -39,9 +42,20 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        if (sentences.Count == 3)
+        {
+            checkboxUI.SetActive(true);
+            continueBtn.SetActive(false);
+        }
+
         string sentence = sentences.Dequeue();
         Debug.Log("Dequeuing sentence: " + sentence);
         dialogueText.text = sentence;
+    }
+
+    public void dequeueNext()
+    {
+        sentences.Dequeue();
     }
 
     void EndDialogue()
